@@ -22,8 +22,8 @@ print(a,b,c,sep=",")
 #a,b,c=input(),input(),input()
 #print(a,b,c,sep=':')
 
-#split-разделитель
-#a=input().split(" ")
+split-разделитель
+a=input().split(" ")
 #print(a[0],a[1],a[2],sep=':')
 
 #8
