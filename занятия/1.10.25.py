@@ -58,6 +58,8 @@ a=int(input())
 b=int(input())
 print(a+b)
 
+
+
 #кортеж- набор неизменяемых данных (tuple)
 a=(1,2,3,4,5,6,6)
 print(a, type(a))
