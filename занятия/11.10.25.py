@@ -4,9 +4,6 @@
 #    print("YES")
 #else:
 #    print("NO")
-from binascii import a2b_qp
-from os import supports_dir_fd
-
 # #13
 # a=int(input())
 # if a==1:
