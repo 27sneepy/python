@@ -58,6 +58,7 @@ for i in setter:
         amount=count
 print(alpha, amount)
 print(a[::3])
+maxim=0
 indexes=[0,0]
 print(a.rfind("o"))
 for i in setter:
@@ -65,9 +66,9 @@ for i in setter:
         continue
     backward=a.rfind(i)
     forward=a.find(i)
-    if (backward-forward)>maxim:
+    if (backward - forward) > maxim:
         maxim=backward-forward
         # indexes[0]=backward
         # indexes[1]=forward   <--- можно и так
-        indexes=a[backward:forward]
+        indexes=a[forward:backward]
 print(indexes)

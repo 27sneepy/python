@@ -34,7 +34,7 @@
 # print(string.upper())# поднимает текст с колен(верхний регистр)
 # print(string.isdigit())# все символы строки это числа
 # string="hello"
-# print(string.isalpha())#true если нет пробелов в троке и цифр
+# print(string.isalpha())#true если нет пробелов в строке и цифр
 # print(string.isalnum())#2 верхних метода в 1
 # string="***hello world***"
 # print(string.strip("*"))#удаляет выбранный символ в начале и конце строки(по умолч пробел)
