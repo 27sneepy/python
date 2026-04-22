@@ -167,3 +167,60 @@
 # s[:]      # копия
 # s[::-1]   # разворот
 # s[::2]    # каждый второй
+
+# a=[]
+# for n in range(2,1000):
+#     b=f"{n:b}"
+#     for _ in range(3):
+#         if b.count("0")==b.count("1"):
+#             b=b+b[-1]
+#         elif b.count("0")<b.count("1"):
+#             b=b+"0"
+#         elif b.count("0")>b.count("1"):
+#             b=b+"1"
+#     r=int(b,2)
+#     if n<100 and r%4==0 and r%8!=0:
+#         a.append(n)
+# print(max(a))
+
+
+# a=[]
+# for n in range(1,100000):
+#     b=f"{n:b}"
+#     if b.count("1")%2==0:
+#         b="1"+b[2:]+"0"
+#     else:
+#         b="11"+b[2:]+"1"
+#     r=int(b,2)
+#     if r>49:
+#         a.append((n,r))
+# print(min(a,key=lambda x:x[1]))
+
+
+# a=[]
+# def per3(x):
+#     s=""
+#     while x>0:
+#         s=str(x%3)+s
+#         x//=3
+#     return s
+# for n in range(1,1000):
+#     d3=per3(n)
+#     if n%3==0:
+#         d3=d3+d3[-2:]
+#     else:
+#         d3=d3+per3(n%3*5)
+#     r=int(d3,3)
+#     if r>150:
+#         a.append(r)
+# print(min(a))
+
+# ПЕРЕВОД ИЗ 10 В 12
+# def per12(x):
+#     s=""
+#     alph="0123456789AB"
+#     while x>0:
+#         s=alph[x%12]+s
+#         x//=12
+#     return s
+
