@@ -66,7 +66,8 @@
 
 ################### 2424
 # from string import digits,ascii_uppercase
-# data = "LOCIZQT00795CCAELL"
+# with open("../files/2424.txt") as f:
+#     data=f.readline()
 # alpha=digits+ascii_uppercase
 # good=alpha[:14]
 # bad=alpha[14:]
@@ -105,7 +106,8 @@
 # (номер) первого символа (первой значащей цифры), с которого начинается запись
 # этого числа в прилагаемом файле. Нумерация символов в текстовом файле начинается с нуля.
 # from string import digits,ascii_uppercase
-# data = "LOCIZQT0079555CCAELLBBB"
+# with open("../files/22356.txt") as f:
+#     data=f.readline()
 # alpha=digits+ascii_uppercase
 # good=alpha[:12]
 # bad=alpha[12:]

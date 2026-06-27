@@ -52,7 +52,8 @@
 # 14-ричного числа. В ответе запишите количество символов (значащих цифр в записи числа) в этой
 # последовательности.
 # from string import digits,ascii_uppercase
-# data = "LOCIZQT00795CCAELL"
+# with open("../files/2424.txt") as f:
+#     data=f.readline()
 # alpha=digits+ascii_uppercase
 # good=alpha[:14]
 # bad=alpha[14:]
@@ -101,3 +102,15 @@
 #         max_len=int(string,12)
 #         index=i-len(string)+1
 # print(index)
+
+
+# Текстовый файл состоит из символов, обозначающих заглавные буквы
+# латинского алфавита и цифры от 1 до 9 включительно. Определите в
+# прилагаемом файле максимальное количество идущих подряд символов,
+# которые могут представлять запись числа в двенадцатеричной системе
+# счисления.
+# from string import digits,ascii_uppercase
+# data="QWE123ABQWE"
+# alph=digits+ascii_uppercase
+# good=alph[:12]
+# bad=alph[12:]
