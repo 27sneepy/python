@@ -50,3 +50,45 @@
 #     max_len = max(max_len, right - left + 1)
 #
 # print(max_len)
+
+
+
+###################### 2404
+
+# data="TTTTUUUTUTTUTTT"
+#
+# left=0
+# cnt=0
+# max_len=0
+# k=5
+#
+# for right in range(len(data)):
+#     if data[right]=="T":
+#         cnt+=1
+#     while cnt>k:
+#         if data[left]=="T":
+#             cnt-=1
+#         left+=1
+#     if cnt==k:
+#         max_len=max(max_len,right-left+1)
+# print(max_len)
+
+###################### 2425
+
+# with open("../files/2425.txt") as f:
+#     data=f.readline()
+# left=0
+# cnt=0
+# max_len=0
+# k=3
+#
+# for right in range(len(data)):
+#     if data[right]=="A":
+#         cnt+=1
+#     while cnt>k:
+#         if data[left]=="A":
+#             cnt-=1
+#         left+=1
+#     if cnt<=k:
+#         max_len=max(max_len,right-left+1)
+# print(max_len)

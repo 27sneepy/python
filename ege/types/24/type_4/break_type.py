@@ -1,0 +1,39 @@
+###################### 2404
+
+# data="TTTTUUUTUTTUTTT"
+#
+# breaks=[-1]
+# k=5
+# max_len=0
+#
+# for i in range(len(data)):
+#     if data[i]=="T":
+#         breaks.append(i)
+#
+# breaks.append(len(data))
+# for i in range(1,len(breaks)-k):
+#     right = breaks[i+k]
+#     left = breaks[i-1]
+#     max_len = max(max_len, right-left-1)
+# print(max_len)
+
+
+###################### 2425
+
+with open("../files/2425.txt") as f:
+    data=f.readline()
+
+breaks=[-1]
+k=3
+max_len=0
+
+for i in range(len(data)):
+    if data[i]=="A":
+        breaks.append(i)
+
+breaks.append(len(data))
+for i in range(1,len(breaks)-k):
+    right = breaks[i+k]
+    left = breaks[i-1]
+    max_len = max(max_len, right-left-1)
+print(max_len)
