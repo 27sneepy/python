@@ -92,3 +92,26 @@
 #     if cnt<=k:
 #         max_len=max(max_len,right-left+1)
 # print(max_len)
+
+
+###################### 2403
+# Текстовый файл состоит из символов A, B, C, D, E и F.
+# Определите максимальное количество идущих подряд символов
+# в прилагаемом файле, среди которых пара символов CD (в указанном порядке)
+# встречается ровно 160 раз.
+# data = "CDCDDCCDDCCDCDCDCD"
+# left = cnt = max_len = 0
+# k = 3
+#
+# for right in range(len(data) - 1):
+#     if data[right] + data[right + 1] == "CD":
+#         cnt += 1
+#
+#     while cnt > k:
+#         if data[left] + data[left + 1] == "CD":
+#             cnt -= 1
+#         left += 1
+#     if cnt == k:
+#         current = right - left + 2
+#         max_len = max(max_len, current)
+# print(max_len)
