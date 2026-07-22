@@ -52,22 +52,22 @@
 # латинского алфавита. Определите в прилагаемом файле минимальное
 # количество идущих подряд символов, среди которых подстрока 2025
 # встречается не менее 110 раз и при этом содержится ровно 90 букв W.
-data="AAW2025WAAAA2025WY2025WAAAY"
-breaks=[-1]
-k=2
-y=2
-min_len = 10**9
-for i in range(len(data)):
-    if data[i] == "W":
-        breaks.append(i)
-breaks.append(len(data))
-print(breaks)
-for i in range(len(breaks)-k-1):
-    start=breaks[i]
-    end=breaks[i+k+1]
-    stroka=data[start+1:end]
-    print(stroka)
-    cnt_2025=stroka.count("2025")
-    if cnt_2025 >= y:
-        min_len = min(min_len, end - start - 1)
-print(min_len)
+# data="AAW2025WAAAA2025WY2025WAAAY"
+# breaks=[-1]
+# k=2
+# y=2
+# min_len = 10**9
+# for i in range(len(data)):
+#     if data[i] == "W":
+#         breaks.append(i)
+# breaks.append(len(data))
+# print(breaks)
+# for i in range(len(breaks)-k-1):
+#     start=breaks[i]
+#     end=breaks[i+k+1]
+#     stroka=data[start+1:end]
+#     print(stroka)
+#     cnt_2025=stroka.count("2025")
+#     if cnt_2025 >= y:
+#         min_len = min(min_len, end - start - 1)
+# print(min_len)
