@@ -30,4 +30,3 @@
 #     if res[-1]-i>=7:
 #         res.append(i)
 # print(len(res),res[-1])
-
