@@ -57,3 +57,81 @@
 #         break
 #
 # print(answer_1,answer_2)
+
+
+# 2619
+# times = []
+#
+# with open("files/2619.txt") as f:
+#     n = int(f.readline())
+#     for i in range(1, n + 1):
+#         sh, o = map(int, f.readline().split())
+#         times.append((sh, i, "SH"))
+#         times.append((o, i, "O"))
+#
+# times=sorted(times)
+#
+# belt=[0]*n
+# left=0
+# right=n-1
+#
+# last_detail = 0
+# count_before = 0
+#
+# used=set()
+# for time, num, sho in times:
+#     if num in used:
+#         continue
+#     used.add(num)
+#     if sho == "SH":
+#         belt[left] = num
+#         left += 1
+#     else:
+#         belt[right]=num
+#         right-=1
+#     last_detail=num
+#     count_before=left
+# print(last_detail,count_before)
+
+# 2608
+# data=[]
+# with open("files/2608.txt") as f:
+#     num=int(f.readline())
+#     for line in f:
+#         string=list(map(int,line.split()))
+#         product={
+#             "item_num":string[0],
+#             "price":string[1],
+#             "status":string[2]
+#         }
+#         data.append(product)
+#
+# avg_price=sum(item["price"] for item in data)/len(data)
+#
+# exp_products = []
+#
+# for item in data:
+#     if item["price"] > avg_price:
+#         exp_products.append(item)
+#
+# products={}
+#
+# for item in exp_products:
+#     item_num=item["item_num"]
+#
+#     if item_num not in products:
+#         products[item_num]={
+#             "price": item["price"],
+#             "sold": 0,
+#             "left": 0
+#         }
+#     if item["status"] == 0:
+#         products[item_num]["sold"] += 1
+#     else:
+#         products[item_num]["left"] += 1
+#
+# leader=max(products.values(),key= lambda x: (x["sold"], x["price"], -x["left"]))
+#
+# revenue=leader["price"]*leader["sold"]
+#
+# print(revenue,leader["left"])
