@@ -135,3 +135,71 @@
 # revenue=leader["price"]*leader["sold"]
 #
 # print(revenue,leader["left"])
+
+# 2609
+# data=[]
+# with open("files/2609.txt") as f:
+#     num=int(f.readline())
+#     for line in f:
+#         data.append(list(map(int,line.split())))
+#
+# data = sorted(data, key=lambda x: (x[1],-x[0]))
+#
+# approved=[data[0]]
+# for event in data[1:]:
+#     if approved[-1][1]<=event[0]:
+#         approved.append(event)
+#
+# longest_break=0
+# for event in data:
+#     if approved[-2][1] <= event[0]:
+#         longest_break= max(longest_break,event[0]-approved[-2][1])
+#
+# print(len(approved),longest_break)
+
+# 2620
+
+# data=[]
+# with open("files/2620.txt") as f:
+#     windows_num=int(f.readline())
+#     request_num=int(f.readline())
+#     for line in f:
+#         data.append(list(map(int, line.split())))
+#
+# data=sorted(data)
+#
+# ending_windows=[0]*windows_num
+# clients=0
+# last_window=0
+#
+# for start,end in data:
+#     for i in range(windows_num):
+#         if ending_windows[i]<start:
+#             ending_windows[i]=end
+#             clients += 1
+#             last_window = i + 1
+#             break
+# print(clients,last_window)
+
+# 2610
+
+# data=[]
+# with open("files/2610.txt") as f:
+#     num=int(f.readline())
+#     for line in f:
+#         start,time=list(map(int,line.split()))
+#         data.append([start,start+time])
+#
+# data = sorted(data, key=lambda x: (x[1],-x[0]))
+#
+# approved=[data[0]]
+# for event in data[1:]:
+#     if approved[-1][1]<=event[0]:
+#         approved.append(event)
+#
+# longest_break=0
+# for event in data:
+#     if approved[-2][1] <= event[0]:
+#         longest_break= max(longest_break,event[0]-approved[-2][1])
+#
+# print(len(approved),longest_break)
