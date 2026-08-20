@@ -1,5 +1,5 @@
 from re import *
-with open("../../../files/24_17563.txt") as f:
+with open("../../files/24_17563.txt") as f:
     data = f.readline()
 # data="-8*7007**8**0-9**7--90*9708897-*0008-*-990"
 data = data.replace("-","*")

@@ -1,6 +1,6 @@
 from re import finditer
 
-with open("../../../files/24_7600.txt") as f:
+with open("../../files/24_7600.txt") as f:
     data=f.readline()
 
 

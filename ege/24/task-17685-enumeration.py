@@ -1,5 +1,5 @@
 from re import *
-with open("../../../files/24_17685.txt") as f:
+with open("../../files/24_17685.txt") as f:
     data = f.readline()
 
 number = r"([1-9][0-9]*|0)"

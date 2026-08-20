@@ -1,5 +1,5 @@
 from re import finditer
-with open("../../../files/24_1975.txt")as f:
+with open("../../files/24_1975.txt")as f:
     data=f.readline()
 pattern=r"[^P]*(P[^P]+)+P[^P]*"
 

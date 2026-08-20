@@ -1,6 +1,6 @@
 from re import finditer
 
-with open("../../../files/24_17641.txt") as f:
+with open("../../files/24_17641.txt") as f:
     data=f.readline()
 
 # 9203948*0+92384*0
